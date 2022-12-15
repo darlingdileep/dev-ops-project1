@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'I am in building myself hello!!! dileep I am fine.......build finish......'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..was completed...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Finaly i am in deployment face happy to deploy my jenkinsfile....'
+            }
+        }
+    }
+}
